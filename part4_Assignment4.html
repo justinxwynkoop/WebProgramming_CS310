@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    p {
+      font-family: arial;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+
+    .container {
+      width: 500px;
+      clear: both;
+    }
+
+    .container input {
+      width: 100%;
+      clear: both;
+    }
+
+    .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+      background-color: #2980B9;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  What service would you like?<br>
+  <select id="list">
+    <option value="1">Makeover</option>
+    <option value="2">Hair Styling</option>
+    <option value="3">Manicure</option>
+    <option value="4">Permanent Makeup</option>
+  </select>
+  <br>
+  <br>
+  Do you have a discount?<br>
+  <select id="container">
+    <option value="1">Yes</option>
+    <option value="2">Yes</option>
+  </select>
+    <br>
+    <br/>
+    <br/>
+    <br>
+    <br>
+    If so how much?<br>
+    <select id="extra">
+      <br>
+      <option value="1">20%</option>
+      <option value="2">10%</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="solve_summary()">Total Sale</button>
+    <button type="button" onClick="refreshPage()">Reset</button>
+    <br><br>
+
+    <p id="pay"></p>
+
+  </div>
+
+  <script>
+    function solve_summary() {
+      var service = document.getElementById("list").value;
+      var reduce = document.getElementById("extra").value;
+
+
+
+        if (service == 1) {
+          total = 125;
+        }
+        if (service == 2) {
+          total = 60;
+        }
+        if (service == 3) {
+          total = 35;
+        }
+        if (service == 4) {
+          total = 200;
+        }
+        if (reduce == 1){
+          total = total - (total * (20/100));
+        }
+        if (reduce == 2){
+          total = total - (total * (10/100));
+        }
+
+
+      results = "Grand Total $" + total.toFixed(2) + ".";
+      document.getElementById("pay").innerHTML = results;
+
+    }
+
+    function refreshPage() {
+      window.location.reload();
+    }
+  </script>
+
+</body>
+<br>
+<br>
+<br>
+
+<a href="index.html">Home</a>
+<br>
+<a href="Assignment4.html">Assignment 4</a>
+
+</html>
+<!--Part 4
+Sarah Anderson owns an image consulting shop. Her clients can select from the following services at the specified regular prices: Makeover $125, Hair Styling $60, Manicure $35, and Permanent Makeup $200.
+She has distributed discount coupons that advertise discounts of 10 percent and 20 percent off the regular price. Create a webpage using HTML 5 and Javascript that will allow the receptionist to select a
+discount rate of 10 percent, 20 percent, or none, and then select a service. Use drop down list for discount and service. Clicking the Calculate button should display the total due.
+-->

@@ -1,0 +1,36 @@
+table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+}
+th, td {
+		padding: 5px;
+}
+th {
+		text-align: left;
+		background-color: rgb(221, 147, 110);
+}
+
+td a{
+	background: green;
+}
+
+h1{
+	color: blue;
+	background: pink;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-right: 20px
+}
+h2{
+	color: yellow;
+	font-size: 16px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background: rgba(0, 0, 0, 0.5);
+}
+h3{
+	color: white;
+	font-size: 16px;
+	text-indent: 1cm;
+	background: rgb(2, 33, 18);
+}

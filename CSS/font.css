@@ -1,0 +1,32 @@
+h1{
+    font-weight: 100;
+    letter-spacing: 4;
+    font-size: 40px;
+}
+
+h2{
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2.5;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2.5;
+    font-size: 20px;
+}
+
+h5{
+    font-weight: 50;
+    letter-spacing: 6;
+    font-size: 20px;
+}
+
+p{
+    font-weight: 200;
+    letter-spacing: 1;
+    font-size: 15px;
+}

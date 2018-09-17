@@ -1,0 +1,87 @@
+html{
+    background: url(../Images/Retro.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profBox{
+    width:400px;
+    height: 600;
+    background: rgba(0,0,0,.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 140px;
+    text-align: center;
+}
+
+.profBox{
+    width:400px;
+    height: 600;
+    background: rgba(0,0,0,.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 140px;
+    text-align: center;
+}
+
+.profPic{
+    border-radius: 25%;
+    height: 200px;
+    width: 200px;
+
+}
+.socialIcons{
+    font-size: 40px;
+    letter-spacing: 6;
+    padding: 20px;
+
+}
+.socialIcons a{
+    color: white;
+    margin-top: 15px;
+}
+
+.lineBreak{
+    width: 300px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}
+
+.projects a {
+    color: white;
+    font-size: 20px;
+}
+
+.projects li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}

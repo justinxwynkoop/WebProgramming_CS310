@@ -1,0 +1,19 @@
+table, tr, th, td{
+  border:1px solid #E6E6E6;
+  border-radius:3px;
+  }
+th {
+  font-family:Helvetica;
+  }
+tr:nth-child(even){
+  background-color:#CEECF5;
+  } <!-- Change coloration on every even row-->
+.char {
+  text-align:left;
+  }
+#metaheader {
+  text-align:center
+  }
+table * * *:hover {
+  background-color:#CEF6CE;
+  }
